@@ -1,2 +1,0 @@
-NugetForUnity
-https://github.com/GlitchEnzo/NuGetForUnity/releases

@@ -53,37 +53,12 @@
     <UnityVersion>2020.3.27f1c1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.Mail.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.Coroutine.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.Json.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.Text.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.Create.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.Random.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.UnityExtension.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\CoroutineHelper.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\Singleton\ISingleton.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.Zip.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.WaitFor.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\Singleton\Singleton.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\ClassSelector\ClassSelector.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\ClassSelector\ClassSelectorLabelAttribute.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.Path.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\ClassSelector\ValueSelector.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\ClassSelector\SkipClassSelectorAttribute.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.MD5.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\Singleton\MonoSingleton.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.ScriptableObjectHelper.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\Attributes\OpenOrCreateButton.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.Extension.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.File.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\Singleton\SingletonCreator.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\HideObjAutoHelper.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.AssetDatabaseHelper.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.Compare.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.Math.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.Copy.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.ReflectionExtension.cs" />
-    <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.Platform.cs" />
+    <Compile Include="Assets\Framework\ThirdParties\Catlib\Demo\Runtime\Config\Providers.cs" />
+    <Compile Include="Assets\Framework\ThirdParties\Catlib\Demo\Runtime\Config\Bootstraps.cs" />
+    <Compile Include="Assets\Framework\ThirdParties\Catlib\Demo\Runtime\Main.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Framework\ThirdParties\Catlib\Core\netstandard2.0\CatLib.Core.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -316,6 +291,9 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="CatLib.Core">
+      <HintPath>Assets\Framework\ThirdParties\Catlib\Core\netstandard2.0\CatLib.Core.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:\software\UnityVersion\2020.3.27f1c1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -709,6 +687,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="CatLib.Unity.csproj">
+      <Project>{4F86CBD0-BEE8-1825-B31A-CE75F9949DB8}</Project>
+      <Name>CatLib.Unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="CatLib.Editor.csproj">
+      <Project>{3C9D8589-A639-8E69-1E8A-1FF213C8BA2A}</Project>
+      <Name>CatLib.Editor</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

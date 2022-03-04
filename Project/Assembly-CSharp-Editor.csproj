@@ -53,15 +53,12 @@
     <UnityVersion>2020.3.27f1c1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Framework\Utility\Editor\EditorUtilities.MenuItem.cs" />
-    <Compile Include="Assets\Framework\Utility\Editor\EditorUtilities.Extension.cs" />
-    <Compile Include="Assets\Framework\Utility\Editor\EditorUtilities.EditorPrefs.cs" />
-    <Compile Include="Assets\Framework\Utility\Editor\EditorUtilites.GUIStyleExtensions.cs" />
-    <Compile Include="Assets\Framework\Utility\Editor\Drawers\OpenOrCreateButtonDrawer.cs" />
-    <Compile Include="Assets\Framework\Utility\Editor\Windows\CreateAssetEditorWindow.cs" />
-    <Compile Include="Assets\Framework\Utility\Editor\EasyPackageInfo.cs" />
-    <Compile Include="Assets\Framework\Utility\Editor\Git\Git.cs" />
-    <Compile Include="Assets\Framework\Utility\Editor\EditorUtilities.Terminal.cs" />
+    <Compile Include="Assets\Framework\ThirdParties\Catlib\Demo\Editor\Config\EditorProviders.cs" />
+    <Compile Include="Assets\Framework\ThirdParties\Catlib\Demo\Editor\EditorMain.cs" />
+    <Compile Include="Assets\Framework\ThirdParties\Catlib\Demo\Editor\Config\EditorBootstraps.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\NuGet\Editor\NugetForUnity.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -315,6 +312,12 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NugetForUnity">
+      <HintPath>Assets\NuGet\Editor\NugetForUnity.dll</HintPath>
+    </Reference>
+    <Reference Include="CatLib.Core">
+      <HintPath>Assets\Framework\ThirdParties\Catlib\Core\netstandard2.0\CatLib.Core.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -723,6 +726,14 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}</Project>
       <Name>Assembly-CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="CatLib.Unity.csproj">
+      <Project>{4F86CBD0-BEE8-1825-B31A-CE75F9949DB8}</Project>
+      <Name>CatLib.Unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="CatLib.Editor.csproj">
+      <Project>{3C9D8589-A639-8E69-1E8A-1FF213C8BA2A}</Project>
+      <Name>CatLib.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

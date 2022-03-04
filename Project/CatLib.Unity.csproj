@@ -53,13 +53,13 @@
     <UnityVersion>2020.3.27f1c1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Framework\ThirdParties\CatLib-2.0.0\src\Runtime\Bootstrap\BootstrapProviderRegister.cs" />
-    <Compile Include="Assets\Framework\ThirdParties\CatLib-2.0.0\src\Runtime\Bootstrap\BootstrapTypeFinder.cs" />
-    <Compile Include="Assets\Framework\ThirdParties\CatLib-2.0.0\src\Runtime\Framework.cs" />
-    <Compile Include="Assets\Framework\ThirdParties\CatLib-2.0.0\src\Runtime\UnityApplication.cs" />
+    <Compile Include="Assets\Framework\ThirdParties\Catlib\Runtime\Bootstrap\BootstrapTypeFinder.cs" />
+    <Compile Include="Assets\Framework\ThirdParties\Catlib\Runtime\UnityApplication.cs" />
+    <Compile Include="Assets\Framework\ThirdParties\Catlib\Runtime\Framework.cs" />
+    <Compile Include="Assets\Framework\ThirdParties\Catlib\Runtime\Bootstrap\BootstrapProviderRegister.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Framework\ThirdParties\CatLib-2.0.0\src\Runtime\CatLib.Unity.asmdef" />
+    <None Include="Assets\Framework\ThirdParties\Catlib\Runtime\CatLib.Unity.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -313,6 +313,9 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NugetForUnity">
+      <HintPath>Assets\NuGet\Editor\NugetForUnity.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:\software\UnityVersion\2020.3.27f1c1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
