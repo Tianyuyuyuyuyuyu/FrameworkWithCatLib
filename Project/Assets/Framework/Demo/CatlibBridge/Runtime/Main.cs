@@ -12,14 +12,15 @@
 using CatLib;
 using CatLib.Util;
 using UnityEngine;
+using Framework.Demo.CatlibBridge.Runtime.Config;
 
-namespace Demo
+namespace Framework.Demo.CatlibBridge.Runtime
 {
     /// <summary>
     /// Main project entrance.
     /// </summary>
     [DisallowMultipleComponent]
-    public sealed class Main : Framework
+    public sealed class Main : CatLib.Framework
     {
         /// <inheritdoc />
         protected override void OnStartCompleted(IApplication application, StartCompletedEventArgs args)

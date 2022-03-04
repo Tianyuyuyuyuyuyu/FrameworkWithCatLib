@@ -11,7 +11,7 @@
 
 using CatLib;
 
-namespace Demo
+namespace Framework.Demo.CatlibBridge.Runtime.Config
 {
     public static class Providers
     {

@@ -53,12 +53,12 @@
     <UnityVersion>2020.3.27f1c1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Framework\ThirdParties\Catlib\Editor\Inspector\InspectorTool.cs" />
-    <Compile Include="Assets\Framework\ThirdParties\Catlib\Editor\Inspector\InspectorFramework.cs" />
-    <Compile Include="Assets\Framework\ThirdParties\Catlib\Editor\EditorFramework.cs" />
+    <Compile Include="Assets\Framework\Catlib\Editor\Inspector\InspectorTool.cs" />
+    <Compile Include="Assets\Framework\Catlib\Editor\Inspector\InspectorFramework.cs" />
+    <Compile Include="Assets\Framework\Catlib\Editor\EditorFramework.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Framework\ThirdParties\Catlib\Editor\CatLib.Editor.asmdef" />
+    <None Include="Assets\Framework\Catlib\Editor\CatLib.Editor.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -315,6 +315,9 @@
     </Reference>
     <Reference Include="NugetForUnity">
       <HintPath>Assets\NuGet\Editor\NugetForUnity.dll</HintPath>
+    </Reference>
+    <Reference Include="CatLib.Core">
+      <HintPath>Assets\Framework\Catlib\Core\netstandard2.0\CatLib.Core.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

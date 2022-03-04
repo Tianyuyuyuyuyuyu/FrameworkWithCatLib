@@ -53,12 +53,12 @@
     <UnityVersion>2020.3.27f1c1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Framework\ThirdParties\Catlib\Demo\Runtime\Config\Providers.cs" />
-    <Compile Include="Assets\Framework\ThirdParties\Catlib\Demo\Runtime\Config\Bootstraps.cs" />
-    <Compile Include="Assets\Framework\ThirdParties\Catlib\Demo\Runtime\Main.cs" />
+    <Compile Include="Assets\Framework\Demo\CatlibBridge\Runtime\Config\Providers.cs" />
+    <Compile Include="Assets\Framework\Demo\CatlibBridge\Runtime\Config\Bootstraps.cs" />
+    <Compile Include="Assets\Framework\Demo\CatlibBridge\Runtime\Main.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Framework\ThirdParties\Catlib\Core\netstandard2.0\CatLib.Core.dll" />
+    <None Include="Assets\Framework\Catlib\Core\netstandard2.0\CatLib.Core.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -293,7 +293,7 @@
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="CatLib.Core">
-      <HintPath>Assets\Framework\ThirdParties\Catlib\Core\netstandard2.0\CatLib.Core.dll</HintPath>
+      <HintPath>Assets\Framework\Catlib\Core\netstandard2.0\CatLib.Core.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>D:\software\UnityVersion\2020.3.27f1c1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -685,15 +685,33 @@
     <Reference Include="UniTask.Linq">
       <HintPath>Library\ScriptAssemblies\UniTask.Linq.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>Library\ScriptAssemblies\Unity.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Addressables.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Addressables.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CacheServer">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.CacheServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>Library\ScriptAssemblies\Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline">
+      <HintPath>Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="CatLib.Unity.csproj">
-      <Project>{4F86CBD0-BEE8-1825-B31A-CE75F9949DB8}</Project>
-      <Name>CatLib.Unity</Name>
-    </ProjectReference>
     <ProjectReference Include="CatLib.Editor.csproj">
       <Project>{3C9D8589-A639-8E69-1E8A-1FF213C8BA2A}</Project>
       <Name>CatLib.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="CatLib.Unity.csproj">
+      <Project>{4F86CBD0-BEE8-1825-B31A-CE75F9949DB8}</Project>
+      <Name>CatLib.Unity</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

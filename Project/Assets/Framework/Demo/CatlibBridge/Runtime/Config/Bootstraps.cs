@@ -12,7 +12,7 @@
 using CatLib;
 using UnityEngine;
 
-namespace Demo
+namespace Framework.Demo.CatlibBridge.Runtime.Config
 {
     public static class Bootstraps
     {
