@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4F86CBD0-BEE8-1825-B31A-CE75F9949DB8}</ProjectGuid>
+    <ProjectGuid>{82186C0C-CEB3-3379-0436-00D2BD2F357B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>CatLib.Unity</AssemblyName>
+    <AssemblyName>Sirenix.OdinInspector.CompatibilityLayer</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -26,7 +26,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -35,7 +35,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -53,13 +53,11 @@
     <UnityVersion>2020.3.27f1c1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Framework\Catlib\Runtime\UnityApplication.cs" />
-    <Compile Include="Assets\Framework\Catlib\Runtime\Bootstrap\BootstrapTypeFinder.cs" />
-    <Compile Include="Assets\Framework\Catlib\Runtime\Framework.cs" />
-    <Compile Include="Assets\Framework\Catlib\Runtime\Bootstrap\BootstrapProviderRegister.cs" />
+    <Compile Include="Assets\Plugins\Sirenix\Odin Inspector\Scripts\SerializedNetworkBehaviour.cs" />
+    <Compile Include="Assets\Plugins\Sirenix\Odin Inspector\Scripts\VectorIntFormatters.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Framework\Catlib\Runtime\CatLib.Unity.asmdef" />
+    <None Include="Assets\Plugins\Sirenix\Odin Inspector\Scripts\Sirenix.OdinInspector.CompatibilityLayer.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
