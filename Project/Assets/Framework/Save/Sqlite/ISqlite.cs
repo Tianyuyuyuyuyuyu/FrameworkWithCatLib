@@ -1,4 +1,4 @@
-using System.Collections;
+锘縰sing System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,32 +7,32 @@ namespace Framework.Save.Sqlite
     public interface ISqlite
     {
         /// <summary>
-        /// 保存数据到数据库
+        /// 淇濆瓨鏁版嵁鍒版暟鎹簱
         /// </summary>
         /// <param name="Key"></param>
         /// <param name="data"></param>
         void Save(string Key, string data);
 
         /// <summary>
-        /// 获得数据库内数据
+        /// 鑾峰緱鏁版嵁搴撳唴鏁版嵁
         /// </summary>
         /// <param name="key"></param>
         /// <returns></returns>
         string GetData(string key);
 
         /// <summary>
-        /// 清除数据库内数据
+        /// 娓呴櫎鏁版嵁搴撳唴鏁版嵁
         /// </summary>
         /// <param name="key"></param>
         void DeleteData(string key);
 
         /// <summary>
-        /// 新数据库创建
+        /// 鏂版暟鎹簱鍒涘缓
         /// </summary>
         void CreateNewDatabase(bool isInGame);
 
         /// <summary>
-        /// 释放资源
+        /// 閲婃斁璧勬簮
         /// </summary>
         void Release();
     }

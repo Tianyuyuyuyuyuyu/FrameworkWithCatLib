@@ -13,6 +13,8 @@ using CatLib;
 using CatLib.Util;
 using UnityEngine;
 using Framework.Demo.CatlibBridge.Runtime.Config;
+using Framework.Save.Sqlite;
+using Newtonsoft.Json;
 
 namespace Framework.Demo.CatlibBridge.Runtime
 {
@@ -22,6 +24,14 @@ namespace Framework.Demo.CatlibBridge.Runtime
     [DisallowMultipleComponent]
     public sealed class Main : CatLib.Framework
     {
+        protected override void Awake()
+        {
+            //Json序列化设置
+            JsonSettings();
+
+            base.Awake();
+        }
+
         /// <inheritdoc />
         protected override void OnStartCompleted(IApplication application, StartCompletedEventArgs args)
         {
@@ -34,6 +44,8 @@ namespace Framework.Demo.CatlibBridge.Runtime
             {
                 Debug.Log("Change debug level: " + newLevel);
             });
+
+            App.Make<ISqlite>().Save("", "");
         }
 
         /// <inheritdoc />
@@ -41,5 +53,28 @@ namespace Framework.Demo.CatlibBridge.Runtime
         {
             return Arr.Merge(base.GetBootstraps(), Bootstraps.GetBoostraps(this));
         }
+
+        #region Json序列化设置
+
+        /// <summary>
+        /// Json序列化设置
+        /// </summary>
+        void JsonSettings()
+        {
+            //Json序列化设置(需要再Repo进行序列化之前，不然会报Json序列化失败异常)
+            JsonConvert.DefaultSettings = () =>
+            {
+                var setting = new JsonSerializerSettings
+                {
+                    TypeNameHandling = TypeNameHandling.All,
+                    NullValueHandling = NullValueHandling.Ignore,
+                    DefaultValueHandling = DefaultValueHandling.Ignore,
+                };
+
+                return setting;
+            };
+        }
+
+        #endregion
     }
 }

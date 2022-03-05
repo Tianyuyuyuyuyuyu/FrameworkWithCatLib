@@ -1,9 +1,9 @@
-using System.Collections.Generic;
+ï»¿using System.Collections.Generic;
 using UnityEngine;
 using Newtonsoft.Json;
 using CatLib;
 using System.Data;
-// using Mono.Data.SqliteClient;
+using Mono.Data.SqliteClient;
 using Sirenix.Utilities;
 using System;
 using System.Text.RegularExpressions;
@@ -28,34 +28,34 @@ namespace Framework.Save.Sqlite
         void InitSQLiteClient()
         {
             // sqlConnection = new SqliteConnection(dreamSQLiteDB);
-            sqlConnection.Open();
-            sqlCommand = sqlConnection.CreateCommand();
+            // sqlConnection.Open();
+            // sqlCommand = sqlConnection.CreateCommand();
         }
 
         public void Save(string Key, string data)
         {
-            Debug.LogError("±£´æÊı¾İ");
+            Debug.LogError("ä¿å­˜æ•°æ®");
         }
 
         public string GetData(string key)
         {
-            Debug.LogError("»ñµÃÊı¾İ");
+            Debug.LogError("è·å¾—æ•°æ®");
             return "";
         }
 
         public void DeleteData(string key)
         {
-            Debug.LogError("É¾³ıÊı¾İ");
+            Debug.LogError("åˆ é™¤æ•°æ®");
         }
 
         public void CreateNewDatabase(bool isInGame)
         {
-            Debug.LogError("ĞÂ½¨Êı¾İ¿â");
+            Debug.LogError("æ–°å»ºæ•°æ®åº“");
         }
 
         public void Release()
         {
-            Debug.LogError("ÊÍ·Å×ÊÔ´");
+            Debug.LogError("é‡Šæ”¾èµ„æº");
         }
     }
 }

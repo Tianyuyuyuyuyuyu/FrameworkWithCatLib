@@ -10,6 +10,7 @@
  */
 
 using CatLib;
+using Framework.Demo.Providers;
 
 namespace Framework.Demo.CatlibBridge.Runtime.Config
 {
@@ -26,6 +27,7 @@ namespace Framework.Demo.CatlibBridge.Runtime.Config
                 return new IServiceProvider[]
                 {
                     // todo: Add a service provider for your project here.
+                    new ProviderSqlite()
                 };
             }
         }
