@@ -89,6 +89,7 @@
     <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.Random.cs" />
     <Compile Include="Assets\Framework\Utility\Runtime\RuntimeUtilities.Create.cs" />
     <Compile Include="Assets\Framework\Demo\CatlibBridge\Runtime\Config\Bootstraps.cs" />
+    <Compile Include="Assets\Framework\Demo\Providers\ProviderSqlite.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Framework\Catlib\Core\netstandard2.0\CatLib.Core.dll" />
