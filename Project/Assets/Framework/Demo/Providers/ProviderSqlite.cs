@@ -1,4 +1,4 @@
-using System.Collections;
+锘縰sing System.Collections;
 using System.Collections.Generic;
 using CatLib;
 using CatLib.Container;
@@ -10,7 +10,7 @@ namespace Framework.Demo.Providers
     public class ProviderSqlite : ServiceProvider
     {
         /// <summary>
-        /// 注册消息管线服务
+        /// 娉ㄥ唽娑堟伅绠＄嚎鏈嶅姟
         /// </summary>
         public override void Register()
         {
