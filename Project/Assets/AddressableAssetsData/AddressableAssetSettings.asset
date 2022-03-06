@@ -79,6 +79,8 @@ MonoBehaviour:
   m_LabelTable:
     m_LabelNames:
     - default
+    - Skin1
+    - Skin2
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 5f5e2c9d72b8f094a93afd4e862d3a72, type: 2}
