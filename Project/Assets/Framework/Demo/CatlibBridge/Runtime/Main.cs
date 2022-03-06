@@ -9,12 +9,15 @@
  * Document: http://catlib.io/
  */
 
+using System.Collections.Generic;
 using CatLib;
 using CatLib.Util;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using Framework.Demo.CatlibBridge.Runtime.Config;
 using Framework.Save.Sqlite;
 using Newtonsoft.Json;
+using UnityEngine.AddressableAssets;
 
 namespace Framework.Demo.CatlibBridge.Runtime
 {
@@ -76,5 +79,20 @@ namespace Framework.Demo.CatlibBridge.Runtime
         }
 
         #endregion
+
+        protected override void Start()
+        {
+            base.Start();
+
+            ResHotFixTest().Forget();
+        }
+
+        async UniTask ResHotFixTest()
+        {
+            var canvas = GameObject.Find("Canvas");
+            var img = await Addressables.LoadAssetAsync<GameObject>("HotImg");
+
+            Object.Instantiate(img, canvas.transform);
+        }
     }
 }

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DefaultGroup: 0ccfc168e65a10349a98ab873e150a73
   m_OptimizeCatalogSize: 0
-  m_BuildRemoteCatalog: 0
+  m_BuildRemoteCatalog: 1
   m_BundleLocalCatalog: 0
   m_CatalogRequestsTimeout: 0
   m_DisableCatalogUpdateOnStart: 0
@@ -30,14 +30,17 @@ MonoBehaviour:
   m_MonoScriptBundleNaming: 0
   m_MonoScriptBundleCustomNaming: 
   m_RemoteCatalogBuildPath:
-    m_Id: 
+    m_Id: 612ead05d86c756498477c1e639c95e5
   m_RemoteCatalogLoadPath:
-    m_Id: 
+    m_Id: 1781c186d715ec24998e7e92fe61299f
   m_ContentStateBuildPath: 
   m_overridePlayerVersion: 
   m_GroupAssets:
   - {fileID: 11400000, guid: eeabd33af8fb0d442942973e35ed1c3c, type: 2}
   - {fileID: 11400000, guid: 8e8cf7d533723a24cb1304fe6bd079c1, type: 2}
+  - {fileID: 11400000, guid: 9a2263e89bace694086885c69dc73a33, type: 2}
+  - {fileID: 11400000, guid: 5d710ba684ffcd842a1a5fcefaf327e8, type: 2}
+  - {fileID: 11400000, guid: 2447a468c9dc5c04ab324deee9883251, type: 2}
   m_BuildSettings:
     m_CompileScriptsInVirtualMode: 0
     m_CleanupStreamingAssetsAfterBuilds: 1
@@ -59,6 +62,20 @@ MonoBehaviour:
         m_Value: ServerData/[BuildTarget]
       - m_Id: 1781c186d715ec24998e7e92fe61299f
         m_Value: http://localhost/[BuildTarget]
+    - m_InheritedParent: 
+      m_Id: aceb8a0bd62a8b641987dd24ff67bdf2
+      m_ProfileName: TestHost
+      m_Values:
+      - m_Id: 1d569f9ff34a6614da760cda7aad1675
+        m_Value: '[UnityEditor.EditorUserBuildSettings.activeBuildTarget]'
+      - m_Id: 0bc04fdcecec996468aad5876fb543f3
+        m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+      - m_Id: 0c919e5d56d27834a9a2f8d5af6d61fc
+        m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+      - m_Id: 612ead05d86c756498477c1e639c95e5
+        m_Value: ServerData/[BuildTarget]
+      - m_Id: 1781c186d715ec24998e7e92fe61299f
+        m_Value: http://192.168.101.10:59701
     m_ProfileEntryNames:
     - m_Id: 1d569f9ff34a6614da760cda7aad1675
       m_Name: BuildTarget
@@ -94,9 +111,38 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8b17071169ca9c441ad80eb6fec165bf, type: 2}
   - {fileID: 11400000, guid: 19de67b6636fa244e997111633917d97, type: 2}
   - {fileID: 11400000, guid: 5cbcec1eef3aeb7498188692dda21ce1, type: 2}
-  m_ActiveProfileId: 900632c240aa6ec439a1d0350f8b0cd7
+  m_ActiveProfileId: aceb8a0bd62a8b641987dd24ff67bdf2
   m_HostingServicesManager:
-    m_HostingServiceInfos: []
+    m_HostingServiceInfos:
+    - classRef: UnityEditor.AddressableAssets.HostingServices.HttpHostingService,
+        Unity.Addressables.Editor
+      dataStore:
+        m_SerializedData:
+        - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+          m_ClassName: System.Int32
+          m_Data: 59701
+          m_Key: HostingServicePort
+        - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+          m_ClassName: System.Int32
+          m_Data: 0
+          m_Key: HostingServiceUploadSpeed
+        - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+          m_ClassName: System.String
+          m_Data: Library/com.unity.addressables/aa/Android/Android;ServerData/Android
+          m_Key: ContentRoot
+        - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+          m_ClassName: System.Boolean
+          m_Data: True
+          m_Key: IsEnabled
+        - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+          m_ClassName: System.String
+          m_Data: Local Hosting
+          m_Key: DescriptiveName
+        - m_AssemblyName: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+          m_ClassName: System.Int32
+          m_Data: 0
+          m_Key: InstanceId
     m_Settings: {fileID: 11400000}
-    m_NextInstanceId: 0
-    m_RegisteredServiceTypeRefs: []
+    m_NextInstanceId: 1
+    m_RegisteredServiceTypeRefs:
+    - UnityEditor.AddressableAssets.HostingServices.HttpHostingService, Unity.Addressables.Editor

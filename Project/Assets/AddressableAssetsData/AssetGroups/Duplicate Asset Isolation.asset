@@ -10,20 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: Default Local Group
+  m_Name: Duplicate Asset Isolation
   m_EditorClassIdentifier: 
-  m_GroupName: Default Local Group
+  m_GroupName: Duplicate Asset Isolation
   m_Data:
     m_SerializedData: []
-  m_GUID: 0ccfc168e65a10349a98ab873e150a73
+  m_GUID: d3d1caa1131b5e04fb9c9cb673859fd7
   m_SerializeEntries:
-  - m_GUID: 2c197884d8b35c3418a2ce8faa390a6e
-    m_Address: Assets/Resource/Prefabs/Cube.prefab
+  - m_GUID: adc48308a519bdd4daf816e106b7d98d
+    m_Address: Assets/Resource/Img/71.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 38142c5821fd191428912039611c45b0
+    m_Address: Assets/Resource/Materials/Mat.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 7216c1c814ecd444c874af201276abea, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 21a7b2c6741062344aab694cd7ccf3e8, type: 2}
-    - {fileID: 11400000, guid: d2ce2950a03dd094e85de1d21d076301, type: 2}
+    - {fileID: 11400000, guid: 71c26a342b1c2a3458a9c47ed68aebc7, type: 2}
+    - {fileID: 11400000, guid: e675b82cf88395f49b53f1f37c2502ff, type: 2}
